@@ -1,0 +1,12 @@
+.toast {
+    position: fixed;
+    padding: var(--spacing);
+    background-color: var(--infoColor);
+    color: var(--gray92);
+    border-radius: var(--borderRadius);
+    font-size: var(--fontSizeLarge);
+    z-index: var(--zindexToastMessages);
+    right: 50%;
+    transform: translate(50%, 100%);
+    bottom: 85%;
+}

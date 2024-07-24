@@ -1,0 +1,308 @@
+.shelter-name {
+    font-size: var(--fontSizeXXLarge);
+    text-align: center;
+    margin-top: 2.4rem;
+    margin-bottom: 3.6rem;
+}
+
+.shelter-name a {
+    color: var(--gray20);
+}
+
+.address-email {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.address,
+.email {
+    text-align: center;
+    font-size: var(--fontSizeXLarge);
+}
+
+.desc {
+    font-size: var(--fontSizeXLarge);
+    line-height: 2;
+    padding: var(--spacingHalf);
+}
+
+.my-leaflet-map-container img {
+    max-height: none;
+}
+
+#map {
+    height: 100%;
+    border-radius: calc(var(--borderRadius));
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.map-section {
+    /* max-height: 80%; */
+    position: relative;
+}
+
+.search-section {
+    grid-column: 1/-1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.house-image-on-map {
+    width: 10rem;
+    height: auto;
+    transform: scale(1.1);
+}
+
+.leaflet-popup-content,
+.leaflet-popup-content-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+.leaflet-popup-close-button span {
+    color: var(--gray92);
+}
+
+.leaflet-popup-close-button span:hover {
+    color: var(--gray80);
+}
+
+.house-link {
+    font-size: var(--fontSizeLarge);
+    display: block;
+    text-align: center;
+    color: var(--infoColor);
+}
+
+.house-link:hover {
+    color: var(--infoColor);
+}
+
+.houses-section ul {
+    min-height: 80%;
+    display: grid;
+    gap: var(--spacingHalf);
+    /* height: 100%; */
+    list-style: none;
+    cursor: pointer;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* padding-bottom: var(--spacing); */
+    /* position: relative; */
+}
+li {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* min-height: 10rem;
+    min-width: 10rem; */
+    height: 36.6rem;
+    width: 100%;
+}
+
+.houses-section {
+    overflow-y: scroll;
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
+    /* padding-bottom: var(--spacing); */
+    height: 100%;
+}
+
+li {
+    overflow: hidden;
+}
+.card-content {
+    height: 100%;
+}
+
+.card-content p {
+    font-size: var(--fontSizeXXLarge);
+    text-align: center;
+    position: relative;
+    text-shadow: 0 0 2px black;
+}
+
+.controls {
+    font-size: var(--fontSizeLarge);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacingQuarter);
+    margin-top: var(--spacing);
+}
+
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 2px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+}
+li {
+    border-radius: calc(var(--borderRadius));
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.075fr 1fr;
+    gap: var(--spacingHalf);
+    padding: calc(var(--spacing));
+    margin-bottom: calc(var(--spacing) * 2);
+    /* padding-bottom: calc(var(--spacing) * 4); */
+    /* overflow: hidden; */
+    height: calc(100lvh - 50px);
+    padding-top: 8rem;
+}
+
+.shadow {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.price-address {
+    margin-top: var(--spacing);
+    margin-bottom: var(--spacingHalf);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing);
+    font-size: var(--fontSizeXXLarge);
+}
+
+.drawer {
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    width: 50vw;
+    padding-right: var(--spacing);
+    background-color: var(--sl-color-primary-900);
+    z-index: 9999;
+    transition: all 0.2s;
+    z-index: 9999;
+    z-index: 99999;
+}
+
+.open .close-button-drawer {
+    display: block;
+}
+.close-button-drawer:hover {
+    color: var(--gray92);
+}
+
+.close-button-drawer:hover {
+    background-color: var(--sl-color-primary-800);
+}
+
+.close-button-drawer {
+    transition: all 0.2s;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--sl-color-primary-900) !important;
+    color: var(--white);
+    cursor: pointer;
+    top: 10% !important;
+    border: none;
+    transform: translate(100%, -50%);
+    padding: var(--spacingHalf);
+    font-size: var(--fontSizeLarge);
+}
+
+.drawer .padding {
+    padding: var(--spacing);
+    padding-right: var(--spacingQuarter);
+    background-color: var(--gray92);
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.status {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.listing {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: var(--spacing);
+    font-size: var(--fontSizeXLarge);
+    margin-bottom: var(--spacing);
+}
+
+.price {
+    font-size: var(--fontSizeXLarge);
+    text-align: center;
+}
+
+.open {
+    transform: translateX(0%);
+}
+
+.position-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--fontSizeLarge);
+}
+
+.toggle-section {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .grid {
+        grid-template-columns: 1fr;
+        display: block;
+        padding-bottom: calc(var(--spacing) * 5);
+    }
+
+    .toggle-section {
+        display: block;
+        margin: 2rem;
+        padding-bottom: calc(var(--spacing));
+    }
+
+    .map-section {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .houses-section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .houses-section ul {
+        width: 100%;
+        display: grid;
+        gap: var(--spacingHalf);
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .houses-section ul {
+        grid-template-columns: 1fr;
+    }
+
+    .drawer {
+        width: 90%;
+    }
+}

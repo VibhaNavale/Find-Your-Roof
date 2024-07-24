@@ -1,0 +1,176 @@
+.navContainer {
+    z-index: var(--zindexFixedNavbar);
+    width: 100%;
+    display: grid;
+    place-content: space-between;
+    grid-template-columns: auto auto;
+    padding: 1rem;
+    align-items: center;
+}
+
+.absoluteNavbar {
+    position: absolute;
+}
+
+.fixedNavbar {
+    position: fixed;
+    background-color: var(--sl-color-primary-950);
+    color: var(--sl-color-primary-400);
+}
+
+.logo {
+    font-size: var(--fontSizeXXLarge);
+    color: var(--white);
+    text-decoration: none;
+    padding-left: 1.5rem;
+}
+
+.logo img {
+    width: 20rem;
+    height: auto;
+}
+
+.navList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.2rem;
+}
+
+.navElem {
+    font-weight: var(--fontWeightBold);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: var(--fontSizeLarge);
+    color: var(--sl-color-primary-400);
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.6rem 3.2rem;
+    /* Adding the below to maintain same style for the login/signup button */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.navElem::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--sl-color-primary-400);
+    left: 50%;
+    transform: translate(-50%, -50%) scaleY(0);
+    bottom: 0%;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    transform-origin: bottom;
+}
+.navElem:hover::after {
+    transform: translate(-50%, -50%) scaleY(100%);
+    opacity: 1;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hamburger menu for mobile view */
+.mobileMenu {
+    display: none; /* Initially hide the hamburger menu */
+    cursor: pointer;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--sl-color-primary-400);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hamburger animation */
+.hamburger.open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    transform: scaleX(0);
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.showMenu .navElem {
+    margin-bottom: 0.5rem;
+}
+
+.mobileNavbar {
+    position: fixed;
+    background-color: var(--sl-color-primary-950);
+    color: var(--sl-color-primary-400);
+}
+
+/* Mobile view styles */
+@media (max-width: 1100px) {
+    .mobileMenu {
+        display: block;
+    }
+
+    .navList {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--sl-color-primary-950);
+        transition: right 0.3s ease-in-out; /* Add transition for smooth animation */
+        /* border: 1px solid var(--sl-color-primary-400); */
+    }
+}

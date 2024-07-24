@@ -1,0 +1,226 @@
+.root-container {
+    padding: calc(var(--spacing));
+    margin-bottom: calc(var(--spacing) * 2);
+    padding-top: 8rem;
+}
+
+.container {
+    width: 100%;
+}
+
+.job-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    border: 2px solid black;
+}
+
+.job-listings {
+    width: 100%;
+    height: 70rem;
+    border-right: 2px solid black;
+    overflow-y: scroll;
+}
+
+.select-a-job {
+    color: var(--gray45);
+    flex-direction: column;
+    gap: var(--spacingQuarter);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: var(--fontSizeLarge);
+}
+.select-a-job svg {
+    fill: var(--gray45);
+}
+
+.job-details {
+    width: 100%;
+    padding: 4rem;
+    overflow-y: auto;
+    max-height: 70rem;
+    line-height: 2;
+    scrollbar-gutter: stable;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.job-item {
+    padding: 1rem;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(128, 128, 128, 0.3);
+    /* This is to override li defined in Housing */
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* .job-item:nth-child(even) {
+  background-color: lightgray;
+} */
+
+.job-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 2px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.jobHeader {
+    display: grid;
+    grid-template-columns: 0.5fr 4fr;
+    gap: 1rem;
+}
+
+.job-title,
+.job-title-detail {
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeightSemiBold);
+    text-align: left;
+    margin-bottom: var(--spacingHalf);
+}
+
+.job-employer,
+.job-employer-detail {
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeightLight);
+    text-align: left;
+    margin-bottom: var(--spacingQuarter);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 1rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 1rem;
+}
+
+.detail-img {
+    width: 40%;
+    max-width: 20rem;
+    /* height: 40%; */
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.job-title-detail {
+    font-size: var(--fontSizeXXLarge);
+    line-height: 1;
+}
+
+.job-employer-detail {
+    font-size: var(--fontSizeXLarge);
+}
+
+.job-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.bold-span {
+    font-weight: var(--fontWeightSemiBold);
+    font-size: 1.5rem;
+}
+
+.job-info {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.job-arrow {
+    font-size: 2rem;
+    color: var(--gray92);
+    text-align: center;
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sl-color-primary-700);
+    border-radius: var(--borderRadius);
+    transition: all 0.2s;
+}
+
+.job-arrow:hover {
+    cursor: pointer;
+    background-color: var(--sl-color-primary-800);
+}
+
+.pageDiv {
+    margin: 1rem auto;
+    width: 45%;
+    justify-items: center;
+    align-items: center;
+}
+
+.mobile-exit {
+    display: none;
+}
+
+/* Mobile view styles */
+@media (max-width: 1100px) {
+    .root-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .job-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .job-listings {
+        width: 100%;
+        height: 100%;
+        border-right: 0;
+    }
+
+    .job-details {
+        display: none;
+        padding: 2rem;
+    }
+
+    .pageDiv {
+        width: 30rem;
+    }
+
+    .mobile-exit {
+        display: block;
+        position: absolute;
+        top: 20rem;
+        right: 2rem;
+        width: 5rem;
+        height: 5rem;
+        border: none;
+        background-color: transparent;
+        font-size: 6rem;
+        font-weight: bold;
+        color: var(--sl-color-primary-800);
+        transition: transform 0.3s;
+    }
+    .mobile-exit:hover {
+        cursor: pointer;
+        transform: scale(1.3);
+    }
+
+    .grid-2 {
+        /* grid-template-columns: 1fr; */
+        gap: 1rem;
+    }
+}

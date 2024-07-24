@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+}
+
+.searchInput,
+.searchBtn {
+    border: var(--border);
+    height: 36px;
+    padding: 8px;
+}
+
+.searchInput {
+    border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+    width: 500px;
+    font-size: 16px;
+}
+
+.houses-or-shelters {
+    color: var(--gray92);
+    background-color: var(--sl-color-primary-800);
+}
+
+.searchBtn {
+    border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
+    background-color: var(--gray96);
+    width: 50px;
+}
+
+.searchBtn:hover {
+    cursor: pointer;
+    background-color: var(--gray80);
+}
+
+.searchIcon {
+    width: 20px;
+}
+
+.label-input {
+    margin-left: var(--spacing);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacingQuarter);
+    color: var(--gray30);
+
+    border-radius: var(--borderRadius);
+    font-size: var(--fontSizeLarge);
+}
+
+.label-input input {
+    height: 100%;
+    border: var(--border);
+    height: 3.6rem;
+    border-radius: var(--borderRadius);
+    padding: var(--spacingHalf);
+}
+
+.select {
+    cursor: pointer;
+    margin: var(--spacing);
+    padding: var(--spacingQuarter);
+    border-radius: var(--borderRadius);
+}
+
+/* Mobile view styles */
+@media (max-width: 1100px) {
+    .searchInput {
+        width: 75%;
+    }
+
+    .select {
+        margin-left: 0.5rem;
+        margin-right: 0;
+        width: 5rem;
+    }
+
+    .searchBtn {
+        width: 3.5rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .label-input {
+        margin-left: 0.5rem;
+    }
+
+    .label-input input {
+        width: 50%;
+    }
+}

@@ -1,0 +1,198 @@
+:root {
+    --white: #ffffff;
+    --gray98: #f7f8fa;
+    --gray96: #f2f4f5;
+    --gray92: #e1e6eb;
+    --gray80: #c3cbd4;
+    --gray60: #818d99;
+    --gray45: #5c6773;
+    --gray30: #3c444d;
+    --gray25: #31373e;
+    --gray22: #2b3033;
+    --gray20: #171d21;
+    --black: #000000;
+    --errorColor: #dc4e41;
+    --alertColor: #f1813f;
+    --warningColor: #f8be34;
+    --successColor: #53a051;
+    --infoColor: #006d9c;
+
+    --sl-color-primary-50: rgb(251 248 255);
+    --sl-color-primary-100: rgb(241 233 254);
+    --sl-color-primary-200: rgb(231 216 253);
+    --sl-color-primary-300: rgb(219 197 252);
+    --sl-color-primary-400: rgb(203 171 251);
+    --sl-color-primary-500: rgb(183 138 249);
+    --sl-color-primary-600: rgb(158 101 242);
+    --sl-color-primary-700: rgb(130 83 199);
+    --sl-color-primary-800: rgb(107 68 164);
+    --sl-color-primary-900: rgb(76 49 117);
+    --sl-color-primary-950: rgb(47 30 72);
+
+    --mobileView: 1100px;
+
+    --textColor: #3c444d;
+    --textGray: #6b7785;
+    --textDisabledColor: #c3cbd4;
+    --borderRadius: 3rem;
+    --border: 0.1rem solid #c3cbd4;
+
+    --fontWeightLight: 300;
+    --fontWeightNormal: 400;
+    --fontWeightSemiBold: 500;
+    --fontWeightBold: 700;
+    --fontWeightHeavy: 800;
+    --fontWeightExtraBold: 900;
+
+    --zindexLayer: 1000;
+    --zindexFixedNavbar: 1030;
+    --zindexModalBackdrop: 1040;
+    --zindexModal: 1050;
+    --zindexPopover: 1060;
+    --zindexToastMessages: 2000;
+
+    --spacingQuarter: 0.5rem;
+    --spacingHalf: 1rem;
+    --spacing: 2rem;
+    --fontSizeSmall: 1.2rem;
+    --fontSize: 1.4rem;
+    --fontSizeLarge: 1.6rem;
+    --fontSizeXLarge: 1.8rem;
+    --fontSizeXXLarge: 2.4rem;
+    --lineHeight: 2rem;
+    --inputHeight: 3.2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.heading {
+    font-size: 3.25rem;
+    color: var(--gray20);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subheading {
+    color: var(--gray60);
+    margin: 1rem auto;
+    text-align: center;
+}
+
+/* Loader styles */
+.loading {
+    height: 50rem;
+}
+
+.lds-ripple {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid var(--sl-color-primary-900);
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}
+.lds-ripple {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.lds-ripple div {
+    position: absolute;
+    border: 4px solid var(--sl-color-primary-800);
+    opacity: 1;
+    border-radius: 50%;
+    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+    0% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    4.9% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    5% {
+        top: 36px;
+        left: 36px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 72px;
+        height: 72px;
+        opacity: 0;
+    }
+}

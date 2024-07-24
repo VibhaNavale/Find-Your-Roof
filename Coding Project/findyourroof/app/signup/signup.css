@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.signup-container {
+    transition: all 0.5s ease;
+    position: relative;
+    width: 45rem;
+    height: 48rem;
+    padding: 20px 30px 120px;
+    background-color: var(--sl-color-primary-900);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-section {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translateX(-50%);
+    width: calc(100% + 180px);
+    padding: 10px 140px;
+    background-color: var(--white);
+    border-radius: 290px;
+    height: 100%;
+    transition: all 0.6s ease;
+    margin-top: 0.5rem;
+}
+
+.login-section header,
+.signup-section header {
+    font-size: 30px;
+    text-align: center;
+    color: var(--white);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-section header {
+    color: var(--gray20);
+    opacity: 0.6;
+}
+
+.signup-section input {
+    color: var(--gray96);
+}
+
+.login-section input {
+    border: 1px solid var(--gray80);
+}
+
+.login-section .btn {
+    background-color: var(--sl-color-primary-900);
+    color: var(--white);
+    border: none;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.supabase-auth-anchor {
+    text-align: center;
+}
+
+.supabase-auth-anchor .signup {
+    color: var(--white);
+}
+
+.supabase-auth-anchor .login {
+    color: var(--gray45);
+}
+
+.supabase-auth-anchor .signup,
+.supabase-auth-anchor .login {
+    font-size: 1.4rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    display: block;
+    text-decoration: underline;
+}
+
+.supabase-auth-button {
+    background-color: var(--sl-color-primary-800) !important;
+    border-color: var(--white) !important;
+}
+
+.supabase-auth-button:hover {
+    background-color: var(--sl-color-primary-700) !important;
+    border-color: var(--white) !important;
+}
+
+/* Mobile view styles */
+@media (max-width: 1100px) {
+    .signup-container {
+        width: 25rem;
+        height: 48rem;
+    }
+}

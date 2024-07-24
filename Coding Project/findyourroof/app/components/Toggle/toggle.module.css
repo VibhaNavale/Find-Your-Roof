@@ -1,0 +1,42 @@
+.toggleContainer {
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 30rem;
+}
+
+.toggleLeft,
+.toggleRight {
+    background-color: var(--sl-color-primary-700);
+    color: var(--gray92);
+    height: 5rem;
+    width: auto;
+    font-size: var(--fontSizeXLarge);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+    padding: 1.5rem;
+}
+
+.toggleLeft {
+    border-top-left-radius: var(--borderRadius);
+    border-bottom-left-radius: var(--borderRadius);
+}
+
+.toggleRight {
+    border-top-right-radius: var(--borderRadius);
+    border-bottom-right-radius: var(--borderRadius);
+}
+
+.toggleLeft.active,
+.toggleRight.active {
+    background-color: var(--sl-color-primary-800);
+}
+
+.toggleLeft:hover,
+.toggleRight:hover {
+    background-color: var(--sl-color-primary-900);
+}

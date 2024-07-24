@@ -1,0 +1,26 @@
+.featuresText {
+    text-align: center;
+    margin: 2rem auto;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.featuresHeading {
+    font-size: 2rem;
+    color: var(--gray25);
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.featuresImage {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.cardContainer {
+    box-shadow:
+        rgba(60, 64, 67, 0.3) 0 0.1rem 0.2rem 0,
+        rgba(60, 64, 67, 0.15) 0 0.2rem 0.5rem 0.2rem;
+    padding: 3rem;
+}

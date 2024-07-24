@@ -1,0 +1,74 @@
+.archives-saved-jobs {
+    width: 90%;
+}
+
+.saved-jobs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.2rem;
+}
+
+.saved-jobs-table th,
+.saved-jobs-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--gray96);
+    font-size: 1.2rem;
+}
+
+.saved-jobs-table th {
+    background-color: var(--sl-color-primary-600);
+    color: var(--gray96);
+    text-align: left;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.saved-jobs-table tbody {
+    display: block;
+    overflow-y: auto;
+    max-height: 43rem;
+}
+
+.saved-jobs-table tbody .odd-row {
+    background-color: var(--sl-color-primary-300);
+    color: var(--gray20);
+}
+
+.saved-jobs-table tbody .even-row {
+    background-color: var(--sl-color-primary-200);
+    color: var(--gray20);
+}
+
+/* Adjust column widths */
+.saved-jobs-table th:first-child,
+.saved-jobs-table td:first-child {
+    width: 30%;
+}
+
+.saved-jobs-table th:nth-child(2),
+.saved-jobs-table td:nth-child(2),
+.saved-jobs-table th:nth-child(3),
+.saved-jobs-table td:nth-child(3) {
+    width: 20%;
+}
+
+tbody button {
+    position: relative;
+    top: 50%;
+    right: 0;
+    background-color: var(--sl-color-primary-800);
+    color: var(--gray92);
+    border: var(--border);
+    border-radius: 33px;
+    height: 40px;
+    width: 80px;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+}
+
+tbody button:hover {
+    background-color: var(--sl-color-primary-700);
+}

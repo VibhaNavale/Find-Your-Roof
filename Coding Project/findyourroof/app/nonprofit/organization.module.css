@@ -1,0 +1,27 @@
+.container {
+    width: 90%;
+    margin: 3rem auto;
+    /* -webkit-mask: linear-gradient(90deg, transparent, white 2%,white 98%, transparent); */
+}
+
+.wrapperContainer {
+    width: auto;
+    /* animation: swipe 30s linear infinite; */
+}
+
+.wrapperContainer:hover {
+    animation-play-state: paused;
+}
+
+@keyframes swipe {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translateX(calc(-50rem * 8));
+    }
+}
+
+.wrapper {
+    display: flex;
+}

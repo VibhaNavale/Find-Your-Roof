@@ -1,0 +1,114 @@
+.archives-table-container {
+    background-color: var(--gray96);
+    border: 1px solid var(--gray96);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transform: translate(5%, 8%);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 90%;
+    height: 68vh;
+    overflow-y: auto;
+}
+
+.archives-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.2rem;
+}
+
+.archives-table th,
+.archives-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--gray96);
+    font-size: 1.3rem;
+}
+
+.archives-table th {
+    background-color: var(--sl-color-primary-600);
+    color: var(--gray96);
+    text-align: left;
+    text-transform: uppercase;
+    position: sticky;
+    top: -1.2rem;
+    z-index: 1;
+}
+
+.archives-table tbody {
+    overflow-y: auto;
+    max-height: 43rem;
+}
+
+.archives-table tbody .odd-row {
+    background-color: var(--sl-color-primary-300);
+    color: var(--gray20);
+}
+
+.archives-table tbody .even-row {
+    background-color: var(--sl-color-primary-200);
+    color: var(--gray20);
+}
+
+/* Adjust column widths */
+.archives-table th:first-child,
+.archives-table td:first-child {
+    width: 30%;
+}
+
+.archives-table th:nth-child(2),
+.archives-table td:nth-child(2),
+.archives-table th:nth-child(3),
+.archives-table td:nth-child(3) {
+    width: 20%;
+}
+
+tbody button {
+    position: relative;
+    top: 50%;
+    right: 0;
+    background-color: var(--sl-color-primary-800);
+    color: var(--gray92);
+    border: var(--border);
+    border-radius: 33px;
+    height: 40px;
+    width: 80px;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+tbody button:hover {
+    background-color: var(--sl-color-primary-700);
+}
+
+.upload-container {
+    position: sticky;
+    bottom: -1rem;
+    z-index: 2;
+}
+
+.upload-button {
+    background-color: var(--sl-color-primary-800);
+    color: var(--gray92);
+    border: var(--border);
+    border-radius: 33px;
+    height: 40px;
+    width: 100px;
+    font-size: var(--fontSize);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.upload-button:hover {
+    background-color: var(--sl-color-primary-700);
+}
+
+.hidden-input {
+    display: none;
+}

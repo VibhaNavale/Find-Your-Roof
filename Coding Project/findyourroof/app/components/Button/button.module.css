@@ -1,0 +1,25 @@
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin: 0 auto;
+    max-width: 150px;
+}
+
+.button {
+    background-color: var(--sl-color-primary-800);
+    color: var(--gray92);
+    border: var(--border);
+    border-radius: var(--borderRadius);
+    height: 5rem;
+    width: 15rem;
+    /* CSS for the Text */
+    font-size: var(--fontSizeXLarge);
+    font-weight: var(--fontWeightBold);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: var(--sl-color-primary-900);
+}
