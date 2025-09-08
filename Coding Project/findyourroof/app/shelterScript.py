@@ -18,7 +18,7 @@ def addShelters(results):
   print("Found ", num, " new homeless shelters")
 
 
-supabase = create_client("https://azuagehbxmcquxsenjtd.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF6dWFnZWhieG1jcXV4c2VuanRkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDcxNjk4MzMsImV4cCI6MjAyMjc0NTgzM30.junj44JwnyuzfKUcaTRUed-FHkh8cbkYP1qvnE8GwVE")
+supabase = create_client("https://tiamhuxhwtzbdhhsgtxi.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRpYW1odXhod3R6YmRoaHNndHhpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTcyODYzOTMsImV4cCI6MjA3Mjg2MjM5M30.EgTlyL1omMkhYnA0v-XdAXuXOb6W6JIPV6BMW5KRXb4")
 url = "https://homeless-shelter.p.rapidapi.com/state-city"
 querystring = {"state":"Illinois","city":"Chicago"}
 headers = {

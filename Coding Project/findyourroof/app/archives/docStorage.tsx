@@ -82,7 +82,7 @@ export const DocStorage: React.FC<DocStorageProps> = ({ userId }) => {
 
     const handleView = (fileName: string) => {
         window.open(
-            'https://azuagehbxmcquxsenjtd.supabase.co/storage/v1/object/public/documents/' +
+            'https://tiamhuxhwtzbdhhsgtxi.supabase.co/storage/v1/object/public/documents/' +
                 userId +
                 '/' +
                 fileName,
